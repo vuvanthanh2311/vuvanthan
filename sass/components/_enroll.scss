@@ -1,0 +1,16 @@
+.enroll {
+    margin: 0 auto;
+    width: 80%;
+    border-radius: 5rem;
+    overflow: hidden;
+    background-size: cover;
+    background-position: center;
+    box-shadow: 0 1rem 2rem rgba($color-black, .2);
+    background-image: radial-gradient(150% 200% ellipse at -15%, rgba($color-white, .8) 50%, transparent 50%), url("/resources/img/background1.jfif");
+    &__form {
+        padding: 5rem;
+    }
+    @include respond(phone) {
+        width: 90%;
+    }
+}

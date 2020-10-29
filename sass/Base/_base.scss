@@ -1,0 +1,32 @@
+ *,
+ *::after,
+ *::before {
+     margin: 0px;
+     padding: 0px;
+     box-sizing: border-box;
+ }
+ 
+ html {
+     font-family: "lato", sans-serif;
+     font-size: 10px;
+     color: $color-black;
+     background-color: $color-white;
+     text-rendering: optimizeLegibility;
+     @include respond(tab-land) {
+         font-size: 9px;
+     }
+     @include respond(tab-port) {
+         font-size: 8px;
+     }
+     @include respond(big-desktop) {
+         font-size: 12px;
+     }
+ }
+ 
+ body {
+     box-sizing: border-box;
+     padding: 1rem;
+     @include respond(tab-port) {
+         padding: 0;
+     }
+ }
